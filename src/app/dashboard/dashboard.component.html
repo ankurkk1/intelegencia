@@ -1,0 +1,2 @@
+<div>Hello {{ (authenticationService.userData | async)?.email }}</div>
+<button (click)="signOut()" *ngIf="authenticationService.userData | async">Logout</button> 
